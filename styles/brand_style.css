@@ -1,0 +1,130 @@
+/* Style for "Brand" assignment - WEB-250 */
+
+html, body {
+	width: 100%;
+	margin: 0;
+	
+}
+
+body {
+	background: #999;
+	color: #0d0d0d;
+	font-family: 'Oxygen', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+h3 {
+	margin-bottom: 0;
+}
+
+p {
+	margin-top: 3px;
+}
+
+.list-margins {
+	margin-top: 0px;
+	padding-left: 20px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.main {
+	position: relative;
+	width: 90%;
+	min-width: 600px;
+	display: block;
+	margin: 30px auto;
+	background-color: #f2f2f2;
+	height: 100%;
+	top: 50%;
+}
+
+.menu {
+	height: 175px;
+	background: #713C00;
+	
+}
+
+.header {
+	text-align: center;
+	color: #f2f2f2;
+}
+
+.title {
+	font-family: 'Indie Flower', cursive;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 3.2em;
+	letter-spacing: 2.5px;
+	margin-top: 10px;
+	font-variant: small-caps;
+}
+
+.tag-line {
+	
+	;
+	text-align: center;
+	margin-top: -10px;
+	font-size: 1em;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1a1a1a;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    
+}
+
+.nav li a:hover {
+    background-color: #333333;
+}
+
+.beagle-header {
+	position: absolute;
+	float: left;
+	left: 20px;
+	margin-top: 10px;
+}
+
+.content {
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+.validate {
+	position: fixed;
+	display: block;
+	text-align: center;
+	bottom: 10px;
+	margin-top: 550px;	
+}
+
+.toc-list li {
+	list-style: none;
+	padding: 0;
+
+
+}
+
+a.toc-list:hover {
+	color: #187624;
+}

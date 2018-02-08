@@ -1,0 +1,8 @@
+<h2>About Greg Conrad</h2>
+	
+		<p><b>Personal Background</b><br>37 years old. I have spent over half my life in Charlotte but also spent time in Boston, Dallas, Charleston and Greenville, SC. Have a lovely fiancé, a dog and a cat.</p>
+		<p><b>Professional/Acedemic Background</b><br>I studied Film Scoring at the Berklee College of Music from '98-'02 and have been a professional composer for 14 years. I have worked on several films, had music in a multitude of advertisements and scored tv shows on 6 cable networks. Began at CPCC Spring 2016 and this is my last semester in the Web Technologies program. I have 6 credits remaining to graduate.</p>
+		<p><b>IT Background</b><br>I began using computers in 1986 at 6 years old. The tech we know today was still very new and no Internet (what?!?). I began using MS-DOS and a program called Cakewalk to compose music. As the years went on I continued to use computer software to compose and produce music and have watched that industry and technology grow from it's infancy. I worked on WIN up until XP then switched to MAC right as OS X came out.</p>
+		<p><b>Background in Subjects in WEB-250</b><br>I have some experience with PHP and MySQL but not combining the two. I look forward to learning a lot about loading databases into websites and web apps.</p>
+		<p><b>Primary Computer Platform</b><br> MAC OS X 10.13 (High Sierra), WIN 10. MacBook Pro with dual boot for WIN 10.</p>
+		<p><b>Something Interesting</b><br> You probably best know my music from a couple of jingles I've written. Most notably, Folger Kia... "See ya at Folger Kia!"</p>

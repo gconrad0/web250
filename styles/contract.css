@@ -1,0 +1,69 @@
+/* CSS for Course Contract WEB-215 */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	background-color: #ffffff;
+	color: #666666;
+	margin: 0; 
+	padding-top: 0; 
+	width: 100%;
+}
+
+header {
+	background-color: #e6e6e6;
+	padding: 1px 0 1px 0;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.body {
+	margin: 0 200px 0 200px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	color: #666666;
+}
+
+.validate {
+	display: inline-block;
+	margin-left: 200px;
+
+}
+
+.hidden {
+    display: none
+}
+
+
+.fillin {
+	font-family: 'Overpass Mono', monospace;
+}
+
+strong {
+	font-weight: 600;
+	color: #000080;
+}
+
+#date {
+	margin: 15px 0 -20px 0;
+	font-size: .8em;
+	color: #000080;
+}
+
+#slide {
+	font-size:100%;
+}
+
+.well {
+		background-color: #e6e6e6;
+		width: 100%;
+		height: 400px;
+		padding: 1px 1px 1px 1px;
+}
+
+.php-countdown {
+	color: red;
+}

@@ -1,0 +1,323 @@
+/* Style for "Brand" assignment - WEB-250 */
+
+html, body {
+	width: 100%;
+	margin: 0;
+}
+
+body {
+	background: url("../images/pawprint.png");
+	background-color: #b3b3b3;
+	background-repeat: repeat;
+	background-size: 200px;
+	background-attachment: fixed;
+	color: #0d0d0d;
+	font-family: 'Oxygen', sans-serif;	
+}
+
+a {
+	text-decoration: none;
+}
+
+h3 {
+	margin-bottom: 0;
+}
+
+p {
+	margin-top: 3px;
+}
+
+b {
+	font-weight: 700;
+	font-size: 1.2em;
+}
+
+.last-modified {
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	color: white;
+	font-weight: lighter;
+}
+
+.email {
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+	color: white;
+	font-weight: lighter;
+	line-height: 50px;
+}
+
+.email a {
+	color: white;
+}
+
+.email a:hover {
+	color: #bf8040;
+}
+
+.list-margins {
+	margin-top: 0px;
+	padding-left: 20px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-brown {
+
+}
+
+.main {
+	position: relative;
+	width: 90%;
+	min-width: 850px;
+	display: block;
+	margin: 10px auto 50px auto;
+	background-color: #f2f2f2;
+	height: 100%;
+	max-width: 1200px;
+}
+
+.content {
+	display: block;
+	margin: 5px auto 30px auto;
+	width: 90%;
+	padding-bottom: 50px;
+	opacity: 0;
+}
+
+.menu {
+	height: 175px;
+	background: #bf8040;
+}
+
+.small-height {
+	background: #bf8040;
+	height: 25px;
+}
+
+.header {
+	text-align: center;
+	color: #f2f2f2;
+}
+
+.title {
+	font-family: 'Indie Flower', cursive;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 3.2em;
+	letter-spacing: 2.5px;
+	margin-top: 10px;
+	font-variant: small-caps;
+}
+
+.tag-line {
+	text-align: center;
+	margin-top: -10px;
+	font-size: 1em;
+}
+
+.nav {
+	color: #f2f2f2;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 50px;
+    background-color: #1a1a1a;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+   
+}
+
+.nav li a:hover {
+    background-color: #333333;
+}
+
+.beagle-header {
+	position: absolute;
+	float: left;
+	left: 20px;
+	margin-top: 10px;
+}
+
+.validate {
+	position: static;
+	display: block;
+	text-align: center;
+	width: 100%;
+	background: #1a1a1a;
+	height: 50px;
+}
+
+.validate a img {
+	padding: 10px 0 10px 0;
+}
+
+.toc {
+	width: 90%;
+	display: block;
+	margin: auto;
+}
+
+.toc-list li {
+	font-size: 1.3em;
+	list-style: none;
+	margin: 0 0 10px 0;
+	display: inline-block;
+	color: #0d0d0d;
+}
+
+.toc-list li a {
+	padding: 8px;
+	color: #0d0d0d;
+	-webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+.toc-list li a:hover {
+	color: #0d0d0d;
+	background-color: rgba(191, 128, 64, .2);
+}
+
+.toc-list li a:visited {
+	color: #0d0d0d;
+}
+
+.btn {
+	color: #fff;
+	background-color: #bf8040;
+	width: 35px;
+	border: 1px solid #86592d;
+	border-radius: 5px;
+	box-shadow: 3px 2px 5px #999;
+	-webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+.btn-clear {
+	font-size: .8em;
+	padding: 5px 10px 5px 10px;
+	color: #fff;
+	background-color: red;
+	width: 100px;
+	border: 1px solid #333;
+	border-radius: 5px;
+	box-shadow: 3px 2px 5px #999;
+	-webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+a, a:visited {
+	color: #fff;
+}
+
+#text-link {
+	color: #bf8040;
+	text-decoration: underline;
+}
+
+#text-link:hover {
+	color: #555;
+}
+
+input {
+	padding: 5px;
+}
+
+.btn:hover, .btn-clear:hover {
+	
+	cursor: pointer;
+	box-shadow: 5px 8px 10px #777;
+}
+
+.form {
+	width: 20%;
+	border: 1px solid #333;
+	
+	padding: 20px;
+	background-color: #ccc;
+
+}
+
+.form-hr {
+	margin-bottom: 10px;
+}
+
+.form-fizz {
+	width: 600px;
+	text-align: left;
+	border: 1px solid #333;
+	padding: 20px;
+	background-color: #ccc;
+	margin-bottom: 5px;
+}
+
+.form-fizz input {
+	margin-bottom: 10px;
+	width: 200px;
+}
+
+.form-div {
+	
+	display: inline;
+}
+
+.table {
+	display: table;
+}
+
+.table-cell {
+	display: table-cell;
+}
+
+.table-row {
+	display: table-row;
+}
+
+.form-label {
+	margin-left: 180px;
+}
+
+.form-input {
+	margin-left: 25px;
+}
+
+input[type=submit] {
+	display: block;
+	margin: auto;
+	width: 30%;
+	padding: 3px 8px 3px 8px;
+	font-size: 1em;
+}
+
+.required::before {
+	color: red;
+	content: "* ";
+	display: inline;
+}
+
+.fizz-output {
+	float: right;
+}
+
+
+

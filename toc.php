@@ -46,7 +46,9 @@
 				<li><a href = "?p=fizzbuzz_one.php">Fizz Buzz 01</a></li>
 				<li>|</li>
 				<li><a href = "?p=fizzbuzz_yournum.php">Fizz Buzz - YOU Choose</a></li>
-				<li>|</li>								
+				<li>|</li>
+				<li><a href = "?p=everything_form.php">Everything Form</a></li>
+				<li>|</li>											
 			</ul>
 		</div>
 		<hr>

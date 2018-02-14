@@ -28,8 +28,18 @@ p {
 }
 
 b {
-	font-weight: 700;
-	font-size: 1.2em;
+	font-weight: bolder;
+	font-size: 1em;
+}
+
+.output-div {
+	width: 600px;
+	text-align: left;
+	border: 1px solid #333;
+	padding: 20px;
+	background-color: #ccc;
+	margin-bottom: 25px;
+	line-height: 25px;
 }
 
 .last-modified {
@@ -199,16 +209,30 @@ b {
 }
 
 .btn {
+	font-size: 1em;
 	color: #fff;
 	background-color: #bf8040;
-	width: 35px;
-	border: 1px solid #86592d;
-	border-radius: 5px;
-	box-shadow: 3px 2px 5px #999;
-	-webkit-transition: .2s ease-out;
-    -moz-transition: .2s ease-out;
-    -o-transition: .2s ease-out;
-    transition: .2s ease-out;
+	width: 85px;
+	border: 1px solid #f2f2f2;
+	border-radius: 10px;
+	box-shadow: 0 7px #444;
+	-webkit-transition: .1s ease-out;
+    -moz-transition: .1s ease-out;
+    -o-transition: .1s ease-out;
+    transition: .1s ease-out;
+    outline: none;
+}
+
+.btn:hover {
+	background-color: #994d00;
+	cursor: pointer;
+}
+
+.btn:active {
+	
+  transform: translateY(4px);
+  box-shadow: 0px 1px #000;
+  background-color: #994d00;
 }
 
 .btn-clear {
@@ -217,13 +241,26 @@ b {
 	color: #fff;
 	background-color: red;
 	width: 100px;
-	border: 1px solid #333;
-	border-radius: 5px;
-	box-shadow: 3px 2px 5px #999;
-	-webkit-transition: .2s ease-out;
-    -moz-transition: .2s ease-out;
-    -o-transition: .2s ease-out;
-    transition: .2s ease-out;
+	border: 1px solid #f2f2f2;
+	border-radius: 50px;
+	box-shadow: 0 7px #444;
+	-webkit-transition: .1s ease-out;
+    -moz-transition: .1s ease-out;
+    -o-transition: .1s ease-out;
+    transition: .1s ease-out;
+    outline: none;
+}
+
+.btn-clear:hover {
+	cursor: pointer;
+	background-color: #cc0000;
+}
+
+.btn-clear:active {
+	
+  transform: translateY(4px);
+  box-shadow: 0px 1px #000;
+  background-color: #cc0000;
 }
 
 a, a:visited {
@@ -243,19 +280,12 @@ input {
 	padding: 5px;
 }
 
-.btn:hover, .btn-clear:hover {
-	
-	cursor: pointer;
-	box-shadow: 5px 8px 10px #777;
-}
-
 .form {
-	width: 20%;
+	width: 300px;
 	border: 1px solid #333;
 	
 	padding: 20px;
 	background-color: #ccc;
-
 }
 
 .form-hr {
@@ -301,7 +331,7 @@ input {
 	margin-left: 25px;
 }
 
-input[type=submit] {
+.form-fizz input[type=submit], .form-everything input[type=submit] {
 	display: block;
 	margin: auto;
 	width: 30%;
@@ -309,15 +339,202 @@ input[type=submit] {
 	font-size: 1em;
 }
 
-.required::before {
-	color: red;
-	content: "* ";
+.required::after {
+	color: rgba(204, 0, 0, 1);
+	content: " *";
 	display: inline;
+	font-size: .9em;
 }
 
 .fizz-output {
 	float: right;
 }
 
+.form-heading {
+	margin: 8px 0px;
+}
+/************** Everything Form begin ************/
 
+.form-everything {
+	width: 600px;
+	text-align: left;
+	border: 1px solid #333;
+	padding: 20px;
+	background-color: #ccc;
+	margin-bottom: 5px;
+}
+
+.form-everything input {
+	display: inline-block;
+	margin-right:10px;
+	margin-bottom: 10px;
+	width: 120px;
+	font-size: .9em;
+}
+
+input[type=email] {
+	width: 200px;
+}
+
+.lighter-text {
+	color: rgba(77, 38, 0, .8);
+	font-size: .9em;
+	
+}
+
+.form-everything input[type=text]:focus,
+.form-everything input[type=number]:focus,
+.form-everything input[type=date]:focus,
+.form-everything input[type=email]:focus,
+.form-everything input[type=tel]:focus,
+.form-everything input[type=password]:focus {
+    background-color: rgba(191, 128, 64, .1);
+    outline: inset;
+    outline-color: #f2f2f2;
+}
+
+
+
+input::placeholder {
+	color: rgba(191, 128, 64, .7);
+} 
+
+.form-everything input::placeholder {
+	font-size: .9em;
+}
+
+.state-dropdown select {
+	padding: 0px;
+	font-size: 12pt;
+	display: block;
+	margin-right:10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 185px;
+}
+
+.state-dropdown select:focus {
+	background-color: #f2f2f2;
+    outline: inset;
+    outline-color: #f2f2f2;
+}
+
+.checkboxes input[type=checkbox] {
+	cursor: pointer;
+	margin-right: -3px;
+	margin-top: 10px;
+	width: 25px;
+	border: 15px;
+	height: 15px;		
+} 
+
+.checkboxes label {
+	margin-right: 50px;
+	margin-left: 0px;
+	cursor: pointer;
+	transition: .15s ease-in-out;
+	padding: 5px;
+}
+
+.checkboxes label:hover {
+	background-color: rgba(191, 128, 64, .2);
+	cursor: pointer;
+}
+
+/* Radio Buttons */
+
+.radio-buttons {
+	margin-left: 10px;
+}
+
+.radio-buttons input[type=radio] {
+	cursor: pointer;
+	margin-left: 0px;
+	margin-right: -5px;
+	margin-top: 5px;
+	width: 25px;
+	border: 5px;
+	height: 20px;	
+}
+
+.radio-buttons label {
+	cursor: pointer;
+	margin-right: 35px;
+}
+
+.form-everything label {
+	margin-right: 10px;
+
+}
+
+.float-r {
+	float: right;
+}
+
+.float-l {
+	float: left;
+}
+
+.form-everything br {
+	clear: both;
+}
+
+.form-everything input:invalid+span:after {
+    content: '✖';
+    color: red;
+    margin-left: -10px;
+    margin-right: 5px;
+}
+
+.form-everything input:valid+span:after {
+    content: '✓';
+    color: green;
+    margin-left: -10px;
+    margin-right: 5px;
+}
+
+#beagleInput {
+	cursor: col-resize;
+	cursor: grab;
+	width: 350px;
+}
+
+#beagleInput:active {
+	cursor: grabbing;
+}
+
+#beagleOutput {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: -15px;
+	font-size: 1.3em;
+	color: rgba(191, 128, 64, 1);
+}
+
+#passwordCheck {
+	margin-right: 3px;
+	width: 15px;
+	height: 15px;
+}
+
+.small-print {
+	display: block;
+	font-size: .8em;
+	margin-top: -3px;
+	
+	font-style: italic;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.cursor-pointer input {
+	cursor: pointer;
+}
+
+.username-div {
+
+	margin-right: 13px;
+}
 

@@ -1,0 +1,10 @@
+Greg Abbot||<img src="images/beagles/beagle03.jpg" alt="Beagle"><br>||Dexter||5||MO
+John Bane||<img src="images/beagles/beagle01.jpg" alt="Beagle"><br>||Fido||10||NC
+Julie Colliver||<img src="images/beagles/beagle02.jpg" alt="Beagle" alt="Beagle"><br>||Mosy||6||IN
+Ben Denly||<img src="images/beagles/beagle03.jpg" alt="Beagle"><br>||Max||1||NC
+George Fromm||<img src="images/beagles/beagle04.jpg" alt="Beagle"><br>||Cooper||9||CA
+Emilee Hannover||<img src="images/beagles/beagle05.jpg" alt="Beagle"><br>||Baylie||3||MI 
+Kelly Loniger||<img src="images/beagles/beagle06.jpg" alt="Beagle"><br>||Duke||2||SC
+Mike Nugent||<img src="images/beagles/beagle07.jpg" alt="Beagle"><br>||Bear||7||NC
+Sarah Penninger||<img src="images/beagles/beagle01.jpg" alt="Beagle"><br>||Lady Bird||4||CA
+Becky Romstein||<img src="images/beagles/beagle02.jpg" alt="Beagle"><br>||Rocky||3||PA

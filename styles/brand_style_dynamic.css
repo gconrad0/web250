@@ -28,7 +28,7 @@ p {
 }
 
 b {
-	font-weight: bolder;
+	font-weight: 900;
 	font-size: 1em;
 }
 
@@ -92,11 +92,12 @@ b {
 }
 
 .content {
-	display: block;
+	
 	margin: 5px auto 30px auto;
 	width: 90%;
 	padding-bottom: 50px;
-	opacity: 0;
+	opacity: 1;
+	height: 100%;
 }
 
 .menu {
@@ -537,4 +538,144 @@ input::placeholder {
 
 	margin-right: 13px;
 }
+
+.padding-btn {
+	padding: 10px;
+
+}
+
+#method-toggle {
+	background-color: #e6e600; color: #333;
+}
+
+#method-toggle:hover {
+background-color: #cccc00;
+}
+
+.submit-everything-form-test {
+	background-color: #00b33c;
+}
+
+.submit-everything-form-test:hover {
+	background-color: #009933;
+}
+
+.dynamic-text-div {
+	width: 100%;
+	min-width: 750px;
+}
+
+.profile-names {
+	width: 200px;
+	height: 375px;
+	text-align: left;
+	border: 1px solid #333;
+	display: inline-block;
+	background-color: #ccc;
+	margin-bottom: 25px;
+	float: left;
+	overflow-x: hidden;
+	
+}
+
+.profile {
+	margin-left: 30px;
+	width: 68%;
+	
+	height: 375px;
+	text-align: left;
+	border: 1px solid #333;
+	display: inline-block;
+	background-color: #ccc;
+}
+
+.profile-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.profile-content2 {
+	font-size: 1em;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+}
+
+.profile-img {
+	float: left;
+	position: relative;
+}
+
+.profile h3 {
+
+	background-color: #999;
+	height: 50px;
+	line-height: 50px;
+	margin: 0;
+	padding-left: 15px;	
+}
+
+.profile-names ul li {
+	margin: 0;
+}
+
+.profile-names ul li a {
+	color: #333;
+	padding: 5px 15px;
+	width: 100%;
+	transition: .1s ease-in-out;	
+	display: block;
+}
+
+.profile-names ul li a:hover {
+	background-color: rgba(191, 128, 64, .2);
+}
+
+.profile-names ul {
+	list-style-type: none;
+	display: block;
+	list-style: none;
+	padding: 0;
+}
+
+
+
+.profile img {
+	width: 225px;
+	height: 170px;
+	border-radius: 50%;
+	padding-top: 10px;
+	margin: 0 auto;
+	display: block;
+}
+
+.profile-img img {
+	width: 320px;
+	height: 240px;
+	border-radius: 0;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+	margin-bottom: 0;
+	
+	
+}	
+
+
+
+.sticky-header {
+  background-color: #999;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  padding-left: 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+}
+
+
+
 

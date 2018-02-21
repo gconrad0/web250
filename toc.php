@@ -5,7 +5,7 @@
 		<title>Beagle World</title>
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">		
+		<link href="https://fonts.googleapis.com/css?family=Oxygen:400,800,900" rel="stylesheet">		
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="styles/brand_style_dynamic.css">
 		<!-- jQuery CDN -->
@@ -48,7 +48,14 @@
 				<li><a href = "?p=fizzbuzz_yournum.php">Fizz Buzz - YOU Choose</a></li>
 				<li>|</li>
 				<li><a href = "?p=everything_form.php">Everything Form</a></li>
-				<li>|</li>											
+				<li>|</li>
+				<li><a href = "?p=everything_form_method_toggle.php">More Fun Everything Form</a></li>
+				<li>|</li>
+				<li><a href = "?p=dynamic_text_records.php">Dynamic Text</a></li>
+				<li>|</li>
+				<li><a href = "?p=dynamic_text_improved.php">Dynamic Text v2.0</a></li>
+				<li>|</li>
+
 			</ul>
 		</div>
 		<hr>
@@ -97,6 +104,6 @@
 	</div>
 
 
-<script src="scripts/fade.js"></script>
+<!--<script src="scripts/fade.js"></script> -->
 </body>
 </html>

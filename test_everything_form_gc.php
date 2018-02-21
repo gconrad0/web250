@@ -1,75 +1,63 @@
 
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles/brand_style_dynamic.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	</head>
+<br><br>
+<div style="display: block;width: 80%;margin: 0 auto;">
+	<div class="output-div">
 <?php
-	
-	if (isset($_POST['submit3'])) {
-		$checkboxes_array = implode(', ', $_POST['otherpet_list']);
-	
-		$dogname = $_POST['dogname'];
-		$dogage = $_POST['dogage'];
-		$dogbirthday = $_POST['dogbirthday'];
-		$dogsex = $_POST['dogsex'];
-		$futureBeagles = $_POST['futureBeagles'];
 
-		$firstname = $_POST['firstname'];
-		$lastname = $_POST['lastname'];
-		$telephone = $_POST['telephone'];
-		$email = $_POST['email_everything_form'];
-		$state = $_POST['state'];
-		$username = $_POST['username'];
-		$password = $_POST['password1'];
+if ($_GET || $_POST) {
 
-		$birthday_format = new DateTime($dogbirthday); 
-
-		if(!empty($_POST['otherpet_list'])) {
-			
-			// Counting number of checked checkboxes.
-			$checked_count = count($_POST['otherpet_list']);
-			//echo "You have selected following ".$checked_count." option(s): <br/>";
-			
-			// Loop to store and display values of individual checked checkbox.	
-				foreach($_POST['otherpet_list'] as $selected) {
-				//	echo $selected ."<br>";
-				}					
-		}
-		$text = "<div class='output-div'>
-		<h2 class='form-heading'>Thank you for signing up, " . $firstname . " " . $lastname . "!</h2>
-		<b>Here's the information you entered:</b><br><hr>
-		<h2 class='form-heading'>Your Info</h2>
-		<b>Name: </b>" . $firstname . " " . $lastname . "<br>
-		<b>Phone number: </b>" . $telephone . "<br>
-		<b>Email: </b>" . $email . "<br>
-		<b>State: </b>" . $state . "<br>
-		<b>Username: </b>" . $username . "<br>
-		<b>Password: </b>" . $password . "<br>
-		<b>Other pets you have: </b>" . $checkboxes_array . "<br>
-		<b>Beagles you would have if you could have any number of beagles: </b>" . $futureBeagles . "<br><hr>
-
-		<h2 class='form-heading'>Beagle's Info</h2>
-		<b>Name: </b>" . $dogname . "<br>
-		<b>Age: </b>" . $dogage . "<br>
-		<b>Birthday: </b>" . $birthday_format->format('D, M d Y') . "<br>
-		<b>Sex: </b>" . $dogsex . "</div>";
-		
-
-
-//echo $checkboxes_array;
+	switch($_SERVER['REQUEST_METHOD']) {
+		case 'GET': 
+			$the_request = &$_GET;
+		 	$request_name = "GET";
+		 	echo "<h3>Form was processed with " . $request_name . "</h3><br>"; 
+			break;
+		case 'POST': 
+			$the_request = &$_POST;
+			$request_name = "POST"; 
+			echo "<h3>Form was processed with " . $request_name . "</h3><br>";
+		 	break;
 	}
 
-	else {
-		$text = "";
+	foreach($the_request as $submittedKey => $submittedValue) {                  	
+		if (is_array($submittedValue)) {           
+			$submittedValue = implode(', ', $submittedValue); 
+        }                
+      	echo "<b>" . $submittedKey . ":</b> " . $submittedValue."<br>";
 	}
+}
 
-unset($_POST['submit3']);		
+else {
+	echo "No values to show!<br><br>";
+}
+
+unset($_GET);
+unset($_POST);
+	
 ?>
 
-<h2>Everything Form</h2>
+	<p id="current-method"></p>
+<div>
 
-	<?php
-		echo $text;
-	?>
+	<a id="method-toggle" class="btn-clear">Toggle Form Method</a> <br><br>
 
+	<!--<a id="get-button" onclick="methodGet()" class="btn-clear" style="background-color: gold; color: #333;">Change Form Method to GET</a>  -->
+</div>
+<br><br>
+<div class="text-center">
+<a href="scripts/clear_form_everything.php" class="btn-clear padding-btn">Reset Values</a>
+	<br><br>
+</div>
+
+</div>
 	
-<form class="form-everything" action="#" method="POST">
+<form id="form01" class="form-everything" action="#" method="GET">
+	<input class="btn submit-everything-form-test" type="submit" name="submit3" value="Submit Form"><br>
+
 	<h2 class="form-heading">Tell Us About Your Beagle</h2>	
 		<div class="div-required">
 			<span class="lighter-text required">Required Field</span>
@@ -93,10 +81,10 @@ unset($_POST['submit3']);
 			<input type="number" name="dogage" min="0" max="30" value="10" step="1" required>
 		</div>
 		<div class="float-l">
-			<label class="lighter-text required">Birthday (mm/dd/yyyy)</label>
+			<label class="lighter-text">Birthday</label>
 			<br>
-			<input type="date" name="dogbirthday" min="1990-01-01" max="<?php echo date('Y-m-d')?>" pattern="^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d$" title="Please us the format: mm/dd/yyyy. No future dates" value="2007-02-05" required>
-			<span class="validity"></span>
+			<input type="date" name="dogbirthday" min="1990-01-01" max="<?php echo date('Y-m-d')?>"  value="2007-02-05">
+			
 		</div>
 		<div class="float-l radio-buttons">
 			<label class="lighter-text required">Boy or Girl?</label>
@@ -104,21 +92,28 @@ unset($_POST['submit3']);
 			<label><input type="radio" name="dogsex" value="Male">Boy</label>
     		<label><input type="radio" name="dogsex" value="Female" checked>Girl</label>
 		</div>
+		<div class="float-l">
+			<label class="lighter-text">Tells Us a Bit About Your Beagle</label>
+			<br>
+			<label><textarea style="font-size:10pt" rows="4" cols="80" name="comment" form="form01">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum mi in ullamcorper faucibus. Nam libero eros, tincidunt et risus sit amet, dictum ultricies diam. Vivamus vestibulum porttitor dictum. In non gravida sapien, sit amet fermentum libero. Aliquam in ullamcorper ante.
+			</textarea>
+			</label>
+		</div>
 		<br>
 		<hr>
 
 	<h3 class="form-heading">Other Info</h3>
 		<div class="checkboxes">
 			What other pets do you have?<br>
-			<label><input type="checkbox" name="otherpet_list[]" value="Other Dog Breed" class="custom-check">Other Dog Breed</label>
-			<label><input type="checkbox" name="otherpet_list[]" value="Cat" checked>Cat</label>
-			<label><input type="checkbox" name="otherpet_list[]" value="Iguana" checked>Iguana</label>
-			<label><input type="checkbox" name="otherpet_list[]" value="Fish">Fish</label>
+			<label><input type="checkbox" name="otherpets[]" value="Other Dog Breed" class="custom-check">Other Dog Breed</label>
+			<label><input type="checkbox" name="otherpets[]" value="Cat" checked>Cat</label>
+			<label><input type="checkbox" name="otherpets[]" value="Iguana" checked>Iguana</label>
+			<label><input type="checkbox" name="otherpets[]" value="Fish">Fish</label>
 			<br>
-			<label><input type="checkbox" name="otherpet_list[]" value="Farret">Ferret</label>
-			<label><input type="checkbox" name="otherpet_list[]" value="Bird">Bird</label>
-			<label><input type="checkbox" name="otherpet_list[]" value="Pig" checked>Pig</label>
-			<label><input type="checkbox" name="otherpet_list[]" value="Hampster">Hamster</label>
+			<label><input type="checkbox" name="otherpets[]" value="Farret">Ferret</label>
+			<label><input type="checkbox" name="otherpets[]" value="Bird">Bird</label>
+			<label><input type="checkbox" name="otherpets[]" value="Pig" checked>Pig</label>
+			<label><input type="checkbox" name="otherpets[]" value="Hampster">Hamster</label>
 		</div>
 	<br>
 		<div>
@@ -148,7 +143,7 @@ unset($_POST['submit3']);
 		<div class="float-l">
 	<label class="lighter-text required">Email</label>
 			<br>
-			<input type="email" name="email_everything_form" placeholder="something@this.that" value="gconrad0@email.cpcc.edu" required>
+			<input type="email" name="email" placeholder="something@this.that" value="gconrad0@email.cpcc.edu" required>
 		</div>
 		<div class="state-dropdown float-l">
 			<label class="lighter-text">State</label>
@@ -223,25 +218,47 @@ unset($_POST['submit3']);
 			<label class="cursor-pointer lighter-text"><input id="passwordCheck" type="checkbox" onclick="showPassword()">Show Password</label><br>
 			<span class="small-print">Password must be:<br>4 - 8 alphanumeric.<br>At least 1 number and 1 letter.<br>No special characters.<br></span>
 		</div>
-					<script>
-						
-						function showPassword() {
-					    var x = document.getElementById("passwordInput");
-					    if (x.type === "password") {
-					        x.type = "text";
-					    } else {
-					        x.type = "password";
-					    }
-					}
-					</script>
+					
+	<br><br><hr><br>
+	<!--<input type="hidden" name="p" value="test_everything_form_gc.php">	-->
+		
 	<br>
-	
-	<br>
-	<hr>
-	<br>
-	<input type="hidden" name="p" value="everything_form.php">	
-		<input class="btn" type="submit" name="submit3" value="Fetch!">
-	<br>
-		<input class="btn-clear" type="reset" value="Reset Form">
+	<!--	<input class="btn-clear" type="reset" value="Reset Form"> -->
 </form>
+</div>
+<script>
+
+	window.onload = methodType;
+
+	$("#method-toggle").click(function() {
+		var pageForm = document.getElementById("form01");
+		var formMethod = pageForm.getAttribute("method");
+
+		if (formMethod === "GET") {
+			pageForm.setAttribute("method", "POST");
+		} 
+
+		if (formMethod === "POST") {
+			pageForm.setAttribute("method", "GET");	
+		}	
+		
+		methodType();
+	});
+
+	function methodType() {
+		var pageForm = document.getElementById("form01");
+		var formMethod = pageForm.getAttribute("method");
+		document.getElementById("current-method").innerHTML = "<h3>Current Method of Form: " + formMethod + "</h3>";
+	}
+
+	function showPassword() {
+	    var x = document.getElementById("passwordInput");
+	    if (x.type === "password") {
+	        x.type = "text";
+	    } else {
+	        x.type = "password";
+	    }
+	}
+
+</script>
 

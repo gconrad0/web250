@@ -178,15 +178,20 @@ b {
 }
 
 .toc {
-	width: 90%;
+	width: 100%;
 	display: block;
 	margin: auto;
+}
+
+.toc-list {
+	margin-right: 10px;
+	margin-left: 15px;
 }
 
 .toc-list li {
 	font-size: 1.3em;
 	list-style: none;
-	margin: 0 0 10px 0;
+	margin: 0 0px 10px 0;
 	display: inline-block;
 	color: #0d0d0d;
 }
@@ -293,6 +298,25 @@ input {
 	margin-bottom: 10px;
 }
 
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	background-color: #ccc;
+	
+}
+
+.flex-item {
+	width: 90%;
+	/*border: 1px solid #999;*/
+	padding: 10px;
+	margin: 20px
+	
+
+
+}
+
 .form-fizz {
 	width: 600px;
 	text-align: left;
@@ -326,6 +350,10 @@ input {
 
 .form-label {
 	margin-left: 180px;
+}
+
+.ending-number {
+	margin-left: 120px;
 }
 
 .form-input {

@@ -55,6 +55,8 @@
 				<li>|</li>
 				<li><a href = "?p=dynamic_text_improved.php">Dynamic Text v2.0</a></li>
 				<li>|</li>
+				<li><a href = "?p=fizzbuzzbang_everything.php">Fizz Buzz Bang Everything</a></li>
+				<li>|</li>
 
 			</ul>
 		</div>

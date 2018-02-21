@@ -9,7 +9,7 @@
 		<li>If the <code>for</code> counter number is divisible by Divisor 1, output Word 1.</li>
 		<li>If the <code>for</code> counter number is divisible by Divisor 2, output Word 2.</li>
 		<li>If the <code>for</code> counter number is divisible by Divisor 1 AND Divisor 2, output Word 1 and Word 2.</li>
-		<li>If none of the critera is met, output only the <code>for</code> counter number.</li>
+		<li>If none of the criteria is met, output only the <code>for</code> counter number.</li>
 
 	</ul>
 <hr>

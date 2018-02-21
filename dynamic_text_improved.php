@@ -1,3 +1,7 @@
+<!-- WEB-250 CPCC
+	PHP code for reading and outputting a text file with delimiters. 
+-->
+
 
 <h2>Dynamic Text</h2>
 <div class="dynamic-text-div">
@@ -23,16 +27,12 @@ if (isset($_GET["n"])) {
 
 
 else {
-	/*$firstRecord = $aListOfSplitStuff[0];
-	$aListOfWords = explode("||", $firstRecord);
-	$pageDesired = $aListOfWords[0]; */
 	$pageDesired = "";
 	$nameOfProfile = "Welcome!";
 	$htmlOutput = "<br>Please select a name to view profile.";
 	$profilePicture = "";
 }
 
-//echo "<h1>$pageDesired</h1>";
 
 for ($i = 0; $i < sizeof($aListOfSplitStuff); $i++) {
 	$currentRecord = $aListOfSplitStuff[$i];
@@ -62,12 +62,3 @@ for ($i = 0; $i < sizeof($aListOfSplitStuff); $i++) {
 </div>
 </div>
 <a id="bottom"></a>
-
-
-
-<?php 
-/*	for ($i = 0; i < sizeof($something); i++ ) {
-		
-	}
-*/
-?>
